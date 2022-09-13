@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pega Title </title>
+    <script>
+        function muestraFuncion();{
+            var opciones = document.getElementsByName("eleccion")
+            console.log(opciones);
+            for (Let i = 0; i < opciones.length; i++){
+              if(opciones[i].checked){
+                alert(opciones[i].value);
+              }
+            }
+        }
+    
+    </script>
+</head>
+<body>
+    <input type="radio" name="eleccion" value="opcion1" checked onclick="muentraOpcion()">Opcion1<br/>
+    <input type="radio" name="eleccion" value="opcion2" checked ="muentraOpcion()">Opcion2<br/>
+    <input type="radio" name="eleccion" value="opcion3" checked ="muentraOpcion()">Opcion3<br/>
+</body>
+
+</html>
